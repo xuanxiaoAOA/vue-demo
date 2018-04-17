@@ -11,8 +11,8 @@
       {{item.text}}
     </div>
     <div>demo4 条件</div>
-    <div v-if='flag'>条件</div>
-    <div>demo5 点击事件</div>
+    <div v-if='flag' class="redB">条件</div>
+    <div>demo5 点击事件 改变条件</div>
     <div v-on:click='press' >按钮</div>
     <div @click='press' >按钮</div>
   </div>
@@ -33,8 +33,13 @@ export default {
   },
   methods: {
     press (event) {
-      console.log(this)
+      this.flag = !this.flag
     }
   }
 }
 </script>
+<style >
+  .redB {
+    background: red;
+  }
+</style>
