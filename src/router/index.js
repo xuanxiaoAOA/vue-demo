@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import Home from '@/page/Home/Home'
 import Product from '@/page/Product/Product'
+import Detial from '@/page/Detial/Detial'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/product',
       name: 'Product',
       component: Product
+    },
+    {
+      path: '/detial',
+      name: 'Detial',
+      component: Detial
     }
   ]
 })

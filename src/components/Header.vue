@@ -2,17 +2,38 @@
   <div class="header">
     <router-link to="/home">首页</router-link>
     <router-link to="/product">产品</router-link>
-    <router-link to="/">返回/ 组件化的</router-link>
+    <router-link :to="{path:'/detial',query: {id:1}}">详情带参数</router-link>
+    <div class="btn btn-primary" @click='goBack'>js返回前一页</div>
+    <div id="example-5">
+      <select v-model="selected">
+        <option disabled value="">请选择</option>
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+      <span>Selected: {{ selected }}</span>
+    </div>
   </div>
 </template>
 <script>
 export default {
-  name: 'Header'
+  name: 'Header',
+  data(){
+    return {
+      selected:''
+    }
+  },
+  methods: {
+		goBack(){
+      this.$router.go(-1)
+			console.log(this.$router.params);
+		}
+	}
 }
 </script>
 <style >
 .header{
-	background: #000;
+	background: #999;
 }
 .header a{
 	color: #fff
