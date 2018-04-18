@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import Home from '@/page/Home/Home'
 import Product from '@/page/Product/Product'
 import Detial from '@/page/Detial/Detial'
+import Plus from '@/page/Plus/Plus'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/detial',
       name: 'Detial',
       component: Detial
+    },
+    {
+      path: '/Plus',
+      name: 'Plus',
+      component:Plus
     }
   ]
 })

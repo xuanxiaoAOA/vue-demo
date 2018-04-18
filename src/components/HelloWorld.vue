@@ -81,6 +81,8 @@
       </li>
     </ul>
     <router-link to="home">离开初始页面 进入demo首页</router-link>
+    <br>
+    <router-link to="plus">离开初始页面 进入plus页</router-link>
   </div>
 </template>
 
