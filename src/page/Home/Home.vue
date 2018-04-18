@@ -15,16 +15,6 @@
     <div>demo5 点击事件 改变条件</div>
     <div v-on:click='press' >按钮8</div>
 <!--     <div @click='press' >按钮</div> -->
-    <ul id="example">
-      <li v-for="item in items">
-        {{ item.message }}
-      </li>
-    </ul>
-    <ul id="example1">
-      <li v-for="(item,index) in items">
-        {{ parentMessage }} - {{index}} - {{item.message}}
-      </li>
-    </ul>
   </div>
 </template>
 <script>
@@ -38,12 +28,7 @@ export default {
         { text: '学习 Vue' },
         { text: '整个牛项目' }
       ],
-      flag: false,
-      parentMessage:'Parent',
-      items:[
-        {message:'Foo'},
-        {message:'Bar'}
-      ],
+      flag: false
 
     }
   },
@@ -57,9 +42,5 @@ export default {
 <style >
   .redB {
     background: red;
-  }
-  #example{
-    width: 80px;
-    margin:0 auto;
   }
 </style>
