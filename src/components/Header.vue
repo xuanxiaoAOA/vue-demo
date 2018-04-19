@@ -4,7 +4,7 @@
     <router-link active-class='active_header' to="/product">产品</router-link>
     <router-link active-class='active_header' to="/plus">plus</router-link>
     <router-link active-class='active_header' :to="{path:'/detial',query: {id:1}}">详情带参数</router-link>
-    <div class="btn btn-primary" @click='goBack'>js返回前一页</div>
+    <el-button type="success" @click='goBack'>js返回前一页</el-button>
     <div id="example-5">
       <select v-model="selected">
         <option disabled value="">请选择</option>
