@@ -5,25 +5,11 @@
     <router-link active-class='active_header' to="/plus">plus</router-link>
     <router-link active-class='active_header' :to="{path:'/detial',query: {id:1}}">详情带参数</router-link>
     <el-button type="success" @click='goBack'>js返回前一页</el-button>
-    <div id="example-5">
-      <select v-model="selected">
-        <option disabled value="">请选择</option>
-        <option>A</option>
-        <option>B</option>
-        <option>C</option>
-      </select>
-      <span>Selected: {{ selected }}</span>
-    </div>
   </div>
 </template>
 <script>
 export default {
   name: 'Header',
-  data(){
-    return {
-      selected:''
-    }
-  },
   methods: {
 		goBack(){
       this.$router.go(-1)
