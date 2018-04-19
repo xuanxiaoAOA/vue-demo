@@ -1,8 +1,9 @@
 <template>
   <div class="header">
-    <router-link to="/home">首页</router-link>
-    <router-link to="/product">产品</router-link>
-    <router-link :to="{path:'/detial',query: {id:1}}">详情带参数</router-link>
+    <router-link active-class='active_header' to="/home">首页</router-link>
+    <router-link active-class='active_header' to="/product">产品</router-link>
+    <router-link active-class='active_header' to="/plus">plus</router-link>
+    <router-link active-class='active_header' :to="{path:'/detial',query: {id:1}}">详情带参数</router-link>
     <div class="btn btn-primary" @click='goBack'>js返回前一页</div>
     <div id="example-5">
       <select v-model="selected">
@@ -35,7 +36,7 @@ export default {
 .header{
 	background: #999;
 }
-.header a{
-	color: #fff
+.active_header{
+  color: #fff;
 }
 </style>

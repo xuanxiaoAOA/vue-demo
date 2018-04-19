@@ -1,8 +1,5 @@
 <template>
   <div id="app">
-    <router-link to="/home">首页</router-link>
-    <router-link to="/product">产品</router-link>
-    <router-link to="/">返回/ 无组件化</router-link>
     <!-- 将路由组件化 -->
     <header-col/>
     <router-view/>

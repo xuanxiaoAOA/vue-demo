@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<BaseInputText 
+		<!-- <BaseInputText 
 			v-model="newTodoText"
 			placeholder="New todo"
 			@keydown.enter="addTodo"
@@ -13,9 +13,9 @@
 				@remove="removeTodo"
 			/>
 		</ul>
-		<p v-else>
+		<p v-else> -->
 			Nothing left in the list. Add a new todo in the input above.
-		</p>
+		<!-- </p> -->
 	</div>
 </template>
 
@@ -24,9 +24,9 @@
 let nextTodoId = 1
 
 export default {
-	components: {
-		BaseInputText, TodoListItem
-	},
+	// components: {
+	// 	BaseInputText, TodoListItem
+	// },
   data () {
     return {
 			newTodoText: '',
